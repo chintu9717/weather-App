@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+    color: white;
+  }
+  .text{
+    text-align: center;
+    color: aqua;
+  }
+
+/* Change the card background */
+.card {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background-image: url('c:/Users/Administrator/Downloads/weather2.jpg'); /* Optional: Add an image */
+  background-size: cover; /* Optional: Make the background cover the entire card */
+  background-position: center; /* Optional: Center the background image */
+}
+
+/* To make text more readable on top of the image */
+.card .weather,
+.card .search,
+.card .forecasth,
+.card .forecstD {
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.search {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background: #ebfffc;
+  color: #555;
+  padding: 10px 25px;
+  height: 60px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.search button {
+ background:white;
+ align-items: center;
+    padding: 5px 20px;
+    color: aliceblue;
+    outline: none;
+    font-size: 17px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+}
+
+.search button img {
+  width: 16px;
+}
+.weather{
+  text-align: center;
+  color: aliceblue;
+}
+
+#city{
+  font-size: 30px;
+}
+.weather img{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(240,248,255,0.4);
+}
+#temperature{
+  font-size: 50px;
+  margin: 0;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.temp-boc{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+#clouds{
+  font-size: 20px;
+  background: rgba(153,205,50,0.75);
+  padding: 2px 20px;
+  border-radius: 15px;
+  text-transform: capitalize;
+}
+.next{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+  font-weight: 500;
+}
+.next p{
+  margin: 3px 0;
+}
+.cast-header{
+  color: aliceblue;
+  background: rgba(10, 10, 10, 0.5);
+  width: max-content;
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+}
+.time, .date{
+  color: rgb(254,189,132);
+}
+.desc{
+  color: rgb(196,255,77);
+}
+.divider2{
+  height: 5px;
+  width: 30%;
+  margin: 0 auto;
+}
+.forecstD{
+  margin: 20px 50px;
+  color: aliceblue;
+}
+.weekf{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+.weather-icon {
+  width: 170px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 80px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.col img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.humidity,
+.wind {
+  font-size: 20px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 14px;
+  margin-top: 10px;
+  display: none;
+  color: red;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weather.CSS" />
+    <link rel="shortcut icon" href="./clear.png" />
+    <script type="module" src="weather.js"></script>
+</head>
+<body>
+    <div class="card">
+        <!-- Search Bar -->
+      <div class="text">
+        <h1>Weather App</h1>
+      </div>
+        <div class="search">
+            <input type="text" id="input" placeholder="Enter city name..." spellcheck="false" />
+            <button id="search"><img src="./search.png" alt="Search" /></button>
+        </div>
+        
+
+        <!-- Error Message (initially hidden) -->
+        <div class="error">
+            <p>Invalid city name.</p>
+        </div>
+
+        <!-- Current Weather -->
+        <div class="weather">
+            <img src="./rain.png" class="weather-icon" alt="Weather Icon" id="img" />
+            <h1 class="temp" id="temperature">26°C</h1>
+            <h2 class="city" id="city">Delhi, IN</h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./humidity.png" alt="Humidity Icon" />
+                    <div>
+                        <p class="humidity" id="humidity">50%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./wind.png" alt="Wind Icon" />
+                    <div>
+                        <p class="wind" id="wind">15 km/h</p>
+                        <p>Wind speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Hourly Forecast -->
+        <div class="forecasth">
+            <p class="cast-header">Upcoming forecast</p>
+            
+            <div class="templist" id="templist">
+                <!-- Dynamically added hourly forecast goes here -->
+            </div>
+        </div>
+
+        <div class="divider2"></div>
+
+        <!-- 4-Day Forecast -->
+        <div class="forecstD">
+            <p class="cast-header">Next 4 Days Forecast</p>
+            
+            <div class="weekf" id="weekf">
+                <!-- Dynamically added 4-day forecast goes here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
